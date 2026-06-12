@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>supermachotwist — GitHub Repositories</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>supermachotwist — GitHub Repositories</h1>
+    <p class="subtitle">Interactive showcase of public repositories and detailed README previews.</p>
+    <div class="controls">
+      <input id="search" placeholder="Search repos by name or description" />
+      <select id="sort">
+        <option value="updated">Sort: Last updated</option>
+        <option value="stars">Sort: Stars</option>
+        <option value="name">Sort: Name</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <div id="status" class="status">Loading repositories…</div>
+    <div id="repos" class="repos-grid"></div>
+  </main>
+
+  <footer class="site-footer"><a href="https://github.com/supermachotwist" target="_blank" rel="noopener">View profile</a></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

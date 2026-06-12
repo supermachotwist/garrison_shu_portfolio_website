@@ -1,0 +1,37 @@
+# GitHub Repos Showcase — supermachotwist
+
+This is a simple static site that lists public GitHub repositories for the user `supermachotwist` and lets you view each repository's README rendered as HTML.
+
+Files created:
+
+- `index.html` — main page and UI
+- `styles.css` — styling
+- `app.js` — fetches repositories and README content from the GitHub API
+
+How to run:
+
+Option 1 — open locally (may be blocked by some browsers' CORS settings):
+
+1. Open `index.html` in your browser.
+
+Option 2 — serve with a simple static server (recommended):
+
+Python 3:
+
+```powershell
+python -m http.server 8000
+
+# then open http://localhost:8000 in your browser
+```
+
+Node (http-server):
+
+```powershell
+npm install -g http-server
+http-server -p 8000
+```
+
+Notes:
+
+- The site uses the public GitHub API and is unauthenticated; it is rate-limited for anonymous requests (60 requests/hour). If you browse many READMEs quickly you may hit the limit. To increase rate limits, update `app.js` to add an authenticated `Authorization: token <YOUR_TOKEN>` header.
+- README content is rendered client-side with `marked.js` and syntax-highlighted with `highlight.js`.
