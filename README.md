@@ -32,8 +32,3 @@ Node (http-server):
 npm install -g http-server
 http-server -p 8000
 ```
-
-Notes:
-
-- The site uses the public GitHub API and is unauthenticated; it is rate-limited for anonymous requests (60 requests/hour). If you browse many READMEs quickly you may hit the limit. To increase rate limits, update `app.js` to add an authenticated `Authorization: token <YOUR_TOKEN>` header.
-- README content is rendered client-side with `marked.js` and syntax-highlighted with `highlight.js`.
