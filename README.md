@@ -10,11 +10,13 @@ Files created:
 
 How to run:
 
-Option 1 — open locally (may be blocked by some browsers' CORS settings):
+Option 1 — This webiste is hosted online https://garrison-shu-portfolio.web.app/
+
+Option 2 — open locally (may be blocked by some browsers' CORS settings):
 
 1. Open `index.html` in your browser.
 
-Option 2 — serve with a simple static server (recommended):
+Option 3 — serve with a simple static server (recommended):
 
 Python 3:
 
