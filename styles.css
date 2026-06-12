@@ -1,8 +1,8 @@
 :root{
   --bg-top: #f3fff7;
   --bg-bottom: #e7f9ee;
-  --card: #ffffff;
-  --text: #0b3b2e;
+  --card: hsl(0, 0%, 100%);
+  --text: #00ffbb;
   --muted: #4a7a66;
   --accent: #7dd3a2; /* pastel green */
   --glass: rgba(125,211,162,0.08);
